@@ -1,0 +1,32 @@
+1. output: Hello, Kotlin
+
+fun main() {
+   val name = "Kotlin"
+    println("Hello, $name!")
+}
+
+2. output: 
+Hello, !
+Hello, null!
+
+fun main(args: Array<String>) {
+   println("Hello, ${args.getOrNull(0)}!")
+   println("Hello, ${null}!")
+}
+
+3. 
+
+fun main() {
+    println("First ${foo()}, second ${foo()}")
+}
+
+fun foo(): String {
+    println("Calculating foo...")
+    return "foo"
+}
+
+Output: 
+
+Calculating foo...
+Calculating foo...
+First foo, second foo

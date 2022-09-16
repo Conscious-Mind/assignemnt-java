@@ -1,0 +1,23 @@
+1. Functions
+
+fun main() {
+    println(max(3, 33))
+}
+
+fun max(a: Int, b: Int): Int = if (a > b) a else b
+
+output: 33
+
+2. Function returning Unit
+
+fun main() {
+    displayMax(3, 33)
+}
+
+fun displayMax(a: Int, b: Int) = println(max(a,b))
+
+fun max(a: Int, b: Int): Int = if (a > b) a else b
+
+Output: 33
+
+3. Top-level function:

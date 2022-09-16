@@ -1,0 +1,74 @@
+1. Read only variable: val
+
+fun main() {
+    val question: String = "life, the universe, " + "and everything"
+    println("$question?")
+    question = "sure?"
+}
+
+output:  Val cannot be reassigned
+
+fun main() {
+    val question: String = "life, the universe, " + "and everything"
+    println("$question?")
+}
+
+output: life, the universe, and everything?
+
+2. Mutable variable: var
+
+fun main() {
+    var answer = 0
+    println(answer)
+    answer = 42
+    println(answer)
+}
+
+output:
+0
+42
+
+3. Local type inference
+
+fun main() {
+    val greeting = "Hi!!!"
+    val number = 345
+    println(greeting::class.simpleName)
+    println(number::class.simpleName)
+}
+
+output:
+String
+Int
+
+fun main() {
+    var greeting = "Hi!!!"
+    greeting = 1
+    println(greeting)
+}
+
+output: The integer literal does not conform to the expected type String
+
+4. val: read-only reference, not object
+
+fun main() {
+    val languages = mutableListOf("Java")
+    languages.add("Kotlin")
+    println(languages)
+}
+
+otuput: [Java, Kotlin]
+* mutable list modifiables
+
+fun main() {
+    val languages = listOf("Java")
+    languages.add("Kotlin")
+    println(languages)
+}
+
+output: Unresolved reference: add
+
+* can't modify a read-only list
+
+
+** Prefer vals to vars
