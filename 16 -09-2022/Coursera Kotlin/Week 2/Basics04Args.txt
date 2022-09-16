@@ -1,0 +1,45 @@
+1. 
+
+fun main() {
+    println(listOf('a', 'b', 'c').joinToString(
+        separator = "", prefix = "(", postfix = ")"))
+    println(listOf('a', 'b', 'c').joinToString(postfix = "."))
+
+}
+
+2. Functions Default Values
+
+fun main() {
+//    printable()
+//    displaySeparator()
+//    displaySeparator('#')
+//    displaySeparator(3, '5')
+
+}
+
+fun displaySeparator(character: Char = '*', size: Int = 10) {
+    repeat(size) { print(character) }
+}
+
+fun printable() {
+    println(listOf('a', 'b', 'c').joinToString(
+        separator = "", prefix = "(", postfix = ")"))
+    println(listOf('a', 'b', 'c').joinToString(postfix = "."))
+}
+
+@JvmOverloads
+fun sum(a: Int = 0, b: Int =  0, c: Int = 0) = println(a + b + c)
+
+
+// Java File
+
+package week2;
+import week2.Basic03Functions;
+import week2.Basics04ArgsKt;
+
+public class UsingFun {
+    public static void main(String[] args) {
+        Basic03Functions.displayMax(3, 4);
+        Basics04ArgsKt.sum(9);
+    }
+}

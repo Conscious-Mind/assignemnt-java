@@ -1,0 +1,7 @@
+1. 
+
+fun main() {
+    val ans = listOf(1, 2, 3, 4)
+    print(ans.any(){i: Int -> i > 2})
+}
+

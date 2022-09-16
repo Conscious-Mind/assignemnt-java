@@ -1,0 +1,74 @@
+1. 
+fun main(){
+    val set = hashSetOf(1, 7, 53)
+    val list = arrayListOf(1, 7, 53)
+    val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
+    
+    println(set.javaClass)
+    println(list.javaClass)
+    println(map.javaClass)
+}
+
+output: 
+class java.util.HashSet
+class java.util.ArrayList
+class java.util.HashMap
+
+2. Multiline String Formatting
+
+fun main(){
+    val q = """To make Err is Human; 
+|To edit is Divine"""
+    
+    print(q)
+}
+
+output:
+
+To make Err is Human;
+To edit is Divine
+
+3. 
+
+fun main(){
+    val q = """
+    To make Err is Human;
+    To edit is Divine""".trimIndent()
+    
+    print(q)
+}
+
+output:
+To make Err is Human;
+To edit is Divine
+
+
+4. 
+
+fun main(){
+    val regex = "\\d{2}\\.\\d{2}\\.\\d{4}".toRegex()
+    println(regex.matches("15.09.2022"))
+    println(regex.matches("15.09.22"))
+}
+
+Output:
+
+true
+false
+
+5. 
+
+fun main(){
+     println("123".toInt())
+     println("1e-10".toDouble())
+     println("123".toIntOrNull())
+     println("xx".toIntOrNull())
+}
+
+
+Output:
+
+123
+1.0E-10
+123
+null

@@ -1,0 +1,75 @@
+1. 
+
+fun main() {
+    val s1: String = "always not null"
+    println(s1)
+    val s2: String? = null
+    println(s2)
+    val s3: String = null
+    println(s3)
+}
+
+Output: Null can not be a value of a non-null type String
+
+2.
+
+fun main() {
+    val s1: String = "always not null"
+    println(s1)
+    val s2: String? = null
+    println(s2)
+//     val s3: String = null
+//     println(s3)
+}
+
+Output:
+
+always not null
+null
+
+
+3. 
+
+fun main() {
+//     val s1: String = "always not null"
+//     println(s1)
+//     val s2: String? = null
+//     println(s2)
+// //     val s3: String = null
+// //     println(s3)
+//     println(s2?.length)
+//     println(s1?.length)
+//     
+//     val s: String? = "Happy"
+//     val lengths: Int? = if (s != null) s.length else null
+//     println(lengths)
+}
+
+4. 
+
+// fun isFoo1(n: Name) = n.value == "foo"
+// fun isFoo2(n: Name?) = n.value == "foo"
+// fun isFoo3(n: Name?) = n != null && n.value == "foo"
+// fun isFoo4(n: Name?) = n?.value == "foo"
+
+fun main() {
+//     val s1: String = "always not null"
+//     println(s1)
+//     val s2: String? = null
+//     println(s2)
+// //     val s3: String = null
+// //     println(s3)
+//     println(s2?.length)
+//     println(s1?.length)
+//     
+//     val s: String? = "Happy"
+//     val lengths: Int? = if (s != null) s.length else null
+//     println(lengths)
+    
+//     isFoo1(null)
+//     isFoo2(null)
+//     isFoo3(null)
+//     isFoo4(null)
+    
+    
+}

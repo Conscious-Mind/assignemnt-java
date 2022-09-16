@@ -1,0 +1,6 @@
+fun main() {
+    val any = "happy"
+	val s: String? = any as? String
+    println(s as? Int)
+    println(s as Int?)
+}

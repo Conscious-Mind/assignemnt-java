@@ -1,0 +1,46 @@
+1. Type cast: as
+
+fun main() {
+    val any = "happy"
+    if(any is String) {
+        val s = any as String 
+        println(s.uppercase())
+    }
+    println(any)   
+}
+
+Output:
+
+HAPPY
+happy
+
+2.
+
+fun main() {
+    val any = "happy"
+    if(any is String) {
+        println(any.uppercase())
+    }
+    println(any)   
+}
+
+3. Safe Casts: as?
+
+fun main() {
+    val any = "happy"
+	println((any as? String)?.uppercase())
+    println(any)   
+}
+
+fun main() {
+    val any = "happy"
+	val s: String? = any as? String
+    println(s)   
+}
+
+fun main() {
+    val any = "happy"
+	val s: String? = any as? String
+    println(s as? Int)  // null
+    println(s as Int?)  // ClassCastException
+}

@@ -1,0 +1,17 @@
+1.
+
+fun main() {
+    val c: Char = "abc".lastChar()
+    print(c)
+}
+
+fun String.lastChar() = this.get(this.length-1)
+
+2.
+
+fun main() {
+    val c: Char = "abc".lastChar()
+    print(c)
+}
+
+fun String.lastChar() = get(length-1)
