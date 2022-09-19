@@ -1,0 +1,5 @@
+// Creating a binding object for the main_activity.xml layout
+binding = ActivityMainBinding.inflate(layoutInflater) 
+
+// Referencing a view with the ID roll_button
+binding.rollButton 
