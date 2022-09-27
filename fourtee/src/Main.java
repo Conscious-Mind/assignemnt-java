@@ -1,9 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.ArrayList;
-
-import static java.lang.Integer.parseInt;
-
 
 public class Main {
     public static void main(String[] args) {
